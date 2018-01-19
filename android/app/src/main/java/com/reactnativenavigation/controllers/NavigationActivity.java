@@ -160,6 +160,7 @@ public class NavigationActivity extends AppCompatActivity implements DefaultHard
         super.onStop();
         clearStartAppPromise();
         NavigationApplication.instance.getActivityCallbacks().onActivityStopped(this);
+        this.finish();
     }
 
     private void clearStartAppPromise() {
